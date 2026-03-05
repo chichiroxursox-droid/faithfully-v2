@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTIVaiTE — AI Workflow Upgrades for Faith-Based Nonprofits</title>
+    <meta name="description" content="We help faith-based nonprofits save 10+ hours per week by streamlining communications and backoffice workflows with AI. Custom prompt libraries, template automation, and staff training.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CULTIVaiTE — AI Workflow Upgrades for Faith-Based Nonprofits">
+    <meta property="og:description" content="We remove the cognitive load that's stealing time from vision, theology, and relationships.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faithful.ly">
+
+    <!-- Favicon (emoji placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌱</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                CULTIV<span class="logo-ai">ai</span>TE
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#what-we-do" class="nav__link">What We Do</a></li>
+                <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#pricing" class="nav__link">Pricing</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Book a Free Call</a></li>
+            </ul>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__gradient"></div>
+        <div class="hero__content">
+            <h1 class="hero__title" id="heroTitle">
+                Your ministry runs on people.<br>
+                <span class="hero__title--accent">Let AI handle the rest.</span>
+            </h1>
+            <p class="hero__subtitle" id="heroSubtitle">
+                We help faith-based nonprofits save 10+ hours/week by streamlining communications and backoffice workflows with AI.
+            </p>
+            <div class="hero__ctas" id="heroCtas">
+                <a href="#how-it-works" class="btn btn--primary">See How It Works</a>
+                <a href="#contact" class="btn btn--outline">Book a Free Strategy Call</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator" id="scrollIndicator">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== PROBLEM SECTION ========== -->
+    <section class="section problem" id="what-we-do">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">The Problem</p>
+                <h2 class="section__title">The Weight You're Carrying</h2>
+                <p class="section__subtitle">Your team wasn't hired to be a marketing department. But that's what it feels like.</p>
+            </div>
+            <div class="problem__grid">
+                <div class="card card--problem">
+                    <div class="card__icon">
+                        <i data-lucide="mail" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Messaging Bottleneck</h3>
+                    <p class="card__text">One email rewritten 4 times for 4 audiences. No dedicated comms staff. Pastors writing marketing copy at 11pm.</p>
+                </div>
+                <div class="card card--problem">
+                    <div class="card__icon">
+                        <i data-lucide="brain" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Decision Fatigue</h3>
+                    <p class="card__text">Leaders aren't missing intelligence — they're missing bandwidth. Budget comparisons, vendor decisions, and parent emails pile up.</p>
+                </div>
+                <div class="card card--problem">
+                    <div class="card__icon">
+                        <i data-lucide="repeat" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Content Treadmill</h3>
+                    <p class="card__text">Newsletters, donor updates, social posts, prayer requests, event announcements... every single month, from scratch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOLUTION SECTION ========== -->
+    <section class="section solution">
+        <div class="container">
+            <div class="solution__layout">
+                <div class="solution__text">
+                    <p class="section__label">The Solution</p>
+                    <h2 class="section__title">A Communications Upgrade Built for Ministry</h2>
+                    <p class="solution__description">Our Communications Workflow Audit + Starter Kit audits your highest-friction workflows, implements AI tools matched to your voice, and leaves your team running faster — with proof.</p>
+                    <ul class="solution__checklist">
+                        <li class="solution__check-item">
+                            <svg class="check-svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path class="check-path" d="M4 12.5l5.5 5.5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Custom AI prompt library matched to your voice</span>
+                        </li>
+                        <li class="solution__check-item">
+                            <svg class="check-svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path class="check-path" d="M4 12.5l5.5 5.5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Newsletter & communications template automation</span>
+                        </li>
+                        <li class="solution__check-item">
+                            <svg class="check-svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path class="check-path" d="M4 12.5l5.5 5.5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Enrollment or donor campaign messaging kit</span>
+                        </li>
+                        <li class="solution__check-item">
+                            <svg class="check-svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path class="check-path" d="M4 12.5l5.5 5.5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Staff training workshop — hands-on, not theoretical</span>
+                        </li>
+                        <li class="solution__check-item">
+                            <svg class="check-svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path class="check-path" d="M4 12.5l5.5 5.5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Before/after time documentation for ROI proof</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="solution__visual">
+                    <div class="solution__card-stack">
+                        <div class="solution__floating-card solution__floating-card--1">
+                            <i data-lucide="sparkles" class="icon icon--gold"></i>
+                            <span>Prompt Library</span>
+                        </div>
+                        <div class="solution__floating-card solution__floating-card--2">
+                            <i data-lucide="file-text" class="icon icon--gold"></i>
+                            <span>Templates</span>
+                        </div>
+                        <div class="solution__floating-card solution__floating-card--3">
+                            <i data-lucide="users" class="icon icon--gold"></i>
+                            <span>Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">The Process</p>
+                <h2 class="section__title">Three Steps to Lighter Days</h2>
+            </div>
+            <div class="steps">
+                <div class="steps__line">
+                    <div class="steps__line-fill" id="stepsLineFill"></div>
+                </div>
+                <div class="step">
+                    <div class="step__number">01</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Audit</h3>
+                        <p class="step__text">We observe your current workflows and find the friction. Where is time being wasted? What's formulaic enough to automate?</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">02</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Build</h3>
+                        <p class="step__text">We implement AI tools customized to your organization's voice, context, and needs. Not generic — yours.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">03</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Launch</h3>
+                        <p class="step__text">Your team runs faster, and we document the results. Real ROI you can show your board.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESULTS / SOCIAL PROOF ========== -->
+    <section class="section results">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">The Results</p>
+                <h2 class="section__title">The Difference It Makes</h2>
+            </div>
+            <div class="results__counters">
+                <div class="counter">
+                    <div class="counter__number" data-target="10">0</div>
+                    <div class="counter__suffix">+ hrs/week</div>
+                    <div class="counter__label">saved on communications</div>
+                </div>
+                <div class="counter">
+                    <div class="counter__number" data-target="50">0</div>
+                    <div class="counter__suffix">% faster</div>
+                    <div class="counter__label">content turnaround</div>
+                </div>
+                <div class="counter">
+                    <div class="counter__number" data-target="1">0</div>
+                    <div class="counter__suffix"> library</div>
+                    <div class="counter__label">infinite outputs</div>
+                </div>
+            </div>
+            <blockquote class="results__quote">
+                <p>"We don't replace vision, theology, or relationships. We remove the cognitive load that's stealing time from all three."</p>
+                <cite>— The CULTIVaiTE Promise</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ========== WHO WE SERVE ========== -->
+    <section class="section serve">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">Who We Serve</p>
+                <h2 class="section__title">Built for Organizations Like Yours</h2>
+            </div>
+            <div class="serve__grid">
+                <div class="card card--serve">
+                    <div class="card__icon">
+                        <i data-lucide="graduation-cap" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Christian Schools</h3>
+                    <p class="card__text">Enrollment marketing, parent communications, donor outreach — all with less stress on your admin team.</p>
+                </div>
+                <div class="card card--serve">
+                    <div class="card__icon">
+                        <i data-lucide="church" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Churches & Ministries</h3>
+                    <p class="card__text">Sermon-to-social workflows, volunteer coordination, newsletter automation — so pastors can pastor.</p>
+                </div>
+                <div class="card card--serve">
+                    <div class="card__icon">
+                        <i data-lucide="heart-handshake" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Rescue Missions & Shelters</h3>
+                    <p class="card__text">Donor thank-yous, impact reports, grant narratives — clear communication that drives funding.</p>
+                </div>
+                <div class="card card--serve">
+                    <div class="card__icon">
+                        <i data-lucide="globe" class="icon"></i>
+                    </div>
+                    <h3 class="card__title">Faith-Based NGOs</h3>
+                    <p class="card__text">Multi-channel adaptation, board memos, campaign messaging — professional output without the overhead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT THE TEAM ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">The Team</p>
+                <h2 class="section__title">Built by People Who Get It</h2>
+                <p class="section__subtitle">We've lived inside the organizations we serve. We know the culture, the constraints, and the calling.</p>
+            </div>
+            <div class="about__grid">
+                <div class="card card--team">
+                    <div class="card__avatar">
+                        <div class="avatar-placeholder">M</div>
+                    </div>
+                    <h3 class="card__title">Micah</h3>
+                    <p class="card__role">Implementation & Partnerships</p>
+                    <p class="card__text">Bridges the gap between AI capability and real-world nonprofit operations.</p>
+                </div>
+                <div class="card card--team">
+                    <div class="card__avatar">
+                        <div class="avatar-placeholder">F</div>
+                    </div>
+                    <h3 class="card__title">Faith</h3>
+                    <p class="card__role">Sales & Branding</p>
+                    <p class="card__text">Speaks the language of ministry leaders and turns trust into partnerships.</p>
+                </div>
+                <div class="card card--team">
+                    <div class="card__avatar">
+                        <div class="avatar-placeholder">C</div>
+                    </div>
+                    <h3 class="card__title">Chi</h3>
+                    <p class="card__role">Development</p>
+                    <p class="card__text">Builds the systems and tools that make AI work for your specific context.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section__header">
+                <p class="section__label">Pricing</p>
+                <h2 class="section__title">Honest Pricing for Honest Work</h2>
+                <p class="section__subtitle">No hidden fees. No surprise invoices. Just clear value for your investment.</p>
+            </div>
+            <div class="pricing__grid">
+                <div class="card card--pricing">
+                    <div class="card__badge">Start Here</div>
+                    <h3 class="card__title">Starter Audit</h3>
+                    <div class="card__price">$2,000 – $5,000</div>
+                    <p class="card__text">We audit 2-3 of your highest-friction workflows and show you exactly where AI can save your team time.</p>
+                    <ul class="card__features">
+                        <li>Workflow observation & documentation</li>
+                        <li>AI opportunity assessment</li>
+                        <li>Custom recommendations report</li>
+                        <li>1-hour strategy session</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--secondary">Get Started</a>
+                </div>
+                <div class="card card--pricing card--pricing-featured">
+                    <div class="card__badge card__badge--gold">Full Package</div>
+                    <h3 class="card__title">Full Implementation</h3>
+                    <div class="card__price">$5,000 – $15,000</div>
+                    <p class="card__text">We build the system, train your team, and prove the ROI. Everything in the audit, plus hands-on delivery.</p>
+                    <ul class="card__features">
+                        <li>Everything in Starter Audit</li>
+                        <li>Custom AI prompt library</li>
+                        <li>Template automation setup</li>
+                        <li>Campaign messaging kit</li>
+                        <li>Staff training workshop</li>
+                        <li>Before/after ROI documentation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--primary">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA / EMAIL CAPTURE ========== -->
+    <section class="section cta" id="contact">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to reclaim your time?</h2>
+                <p class="cta__subtitle">Join the waitlist or book a free strategy call. No pressure, just a conversation about what's possible.</p>
+                <form class="cta__form" id="ctaForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="cta__input-group">
+                        <input type="email" name="email" placeholder="Your email address" required class="cta__input" aria-label="Email address">
+                        <button type="submit" class="btn btn--primary cta__submit">Join the Waitlist</button>
+                    </div>
+                    <p class="cta__note">We'll only email you when we have something worth saying.</p>
+                </form>
+                <div class="cta__divider">
+                    <span>or</span>
+                </div>
+                <a href="#" class="btn btn--outline btn--large">Book a Free Strategy Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">CULTIV<span class="logo-ai">ai</span>TE</a>
+                    <p class="footer__tagline">Built with purpose.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#what-we-do">What We Do</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer__copy">
+                    <p>&copy; 2026 CULTIVaiTE. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
