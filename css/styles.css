@@ -1042,8 +1042,8 @@ ul {
 }
 
 .footer__brand .logo-ai {
-    color: var(--color-cherry);
-    -webkit-text-fill-color: var(--color-cherry);
+    color: #4A90D9;
+    -webkit-text-fill-color: #4A90D9;
 }
 
 .footer__tagline {
