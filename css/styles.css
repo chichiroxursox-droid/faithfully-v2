@@ -362,6 +362,7 @@ ul {
 
 .hero__title--accent {
     color: var(--color-cherry);
+    font-weight: 700;
 }
 
 .hero__subtitle {
@@ -692,9 +693,15 @@ ul {
 
 .results__counters {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
     margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 900px) {
+    .results__counters {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .counter {
